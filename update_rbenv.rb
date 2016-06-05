@@ -11,3 +11,8 @@ Dir.chdir(rubybuild_dir) do
   puts "Updating ruby-build..."
   puts `git pull`
 end
+
+puts "Updating ruby gems..."
+puts `gem update --system`
+puts `gem update`
+
